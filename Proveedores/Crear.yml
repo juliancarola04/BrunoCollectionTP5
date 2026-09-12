@@ -1,0 +1,28 @@
+info:
+  name: Crear
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{baseURL}}/api/proveedores/admin/crear"
+  body:
+    type: json
+    data: |-
+      {
+        "razonSocial": "Razon Social",
+        "cuit": "CUIT",
+        "direccion": "Direccion",
+        "email": "Email",
+        "telefono": "Telefono"
+      }
+  auth:
+    type: bearer
+    token: ""
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

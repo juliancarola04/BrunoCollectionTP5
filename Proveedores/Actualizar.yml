@@ -1,18 +1,20 @@
 info:
   name: Actualizar
   type: http
-  seq: 2
+  seq: 4
 
 http:
   method: PUT
-  url: "{{baseURL}}/api/usuarios/actualizar"
+  url: "{{baseURL}}/api/proveedores/admin/actualizar/{idProveedor}"
   body:
     type: json
     data: |-
       {
-        "username" : "username",
-        "email" : "email",
-        "password" : "password"
+        "razonSocial": "Razon Social",
+        "cuit": "CUIT",
+        "direccion": "Direccion",
+        "email": "Email@gmail.com",
+        "telefono": "Telefono"
       }
   auth:
     type: bearer

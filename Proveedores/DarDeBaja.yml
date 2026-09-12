@@ -1,11 +1,11 @@
 info:
   name: DarDeBaja
   type: http
-  seq: 2
+  seq: 5
 
 http:
   method: DELETE
-  url: "{{baseURL}}/api/usuarios/admin/dardebaja/{idUsuario}"
+  url: "{{baseURL}}/api/proveedores/admin/dardebaja/1"
   auth:
     type: bearer
     token: ""

@@ -1,14 +1,12 @@
 info:
-  name: DarDeBaja
+  name: ObtenerPorId
   type: http
   seq: 2
 
 http:
-  method: DELETE
-  url: "{{baseURL}}/api/usuarios/admin/dardebaja/{idUsuario}"
-  auth:
-    type: bearer
-    token: ""
+  method: GET
+  url: "{{baseURL}}/api/proveedores/admin/{idProveedor}"
+  auth: inherit
 
 settings:
   encodeUrl: true

@@ -4,7 +4,7 @@ info:
   seq: 4
 
 http:
-  method: POST
+  method: PUT
   url: "{{baseURL}}/api/usuarios/admin/actualizar/{idUsuario}"
   body:
     type: json

@@ -1,11 +1,11 @@
 info:
-  name: DarDeBaja
+  name: ObtenerTodos
   type: http
-  seq: 2
+  seq: 1
 
 http:
-  method: DELETE
-  url: "{{baseURL}}/api/usuarios/admin/dardebaja/{idUsuario}"
+  method: GET
+  url: "{{baseURL}}/api/proveedores/admin"
   auth:
     type: bearer
     token: ""
