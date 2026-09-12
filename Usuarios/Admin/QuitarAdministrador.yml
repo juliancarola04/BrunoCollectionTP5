@@ -1,0 +1,18 @@
+info:
+  name: QuitarAdministrador
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: "{{baseURL}}/api/usuarios/quitaradministrador/{idUsuario}"
+  auth:
+    type: bearer
+    token: ""
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
