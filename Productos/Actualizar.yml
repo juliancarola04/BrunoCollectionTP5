@@ -1,0 +1,28 @@
+info:
+  name: Actualizar
+  type: http
+  seq: 3
+
+http:
+  method: PUT
+  url: "{{baseURL}}/api/productos/3"
+  body:
+    type: json
+    data: |-
+      {
+        "nombre": "Azucarera",
+        "precioCompra": 3000,
+        "precioVenta": 5500,
+        "stock": 15,
+        "categoriaId": 1
+      }
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

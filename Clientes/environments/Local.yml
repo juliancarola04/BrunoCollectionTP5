@@ -1,0 +1,8 @@
+name: Local
+variables:
+  - name: token
+    value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJBUElDbGllbnRlIiwiaXNzIjoiQVBJIiwiZXhwIjoxNzg5NjgzODkwLCJzdWIiOiIxIiwiZW1haWwiOiJ0ZXN0QHRlc3QuY29tIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiVmlzaXRhbnRlIiwiaWF0IjoxNzg5NjgwMjkwLCJuYmYiOjE3ODk2ODAyOTB9.5buBxnURxk0N_IfOxN4gmTqW0zi2vs2_h_HTEhLlRWc
+    description: ""
+  - name: baseURL
+    value: https://localhost:7128
+    description: ""

@@ -1,18 +1,17 @@
 info:
-  name: Login
+  name: ObtenerPorId
   type: http
-  seq: 2
+  seq: 5
 
 http:
-  method: POST
-  url: "{{baseURL}}/api/auth/login"
+  method: GET
+  url: "{{baseURL}}/api/productos/1"
   body:
     type: json
-    data: |-
-      {
-        "username": "test",
-        "password": "Test1234"
-      }
+    data: ""
+  auth:
+    type: bearer
+    token: "{{token}}"
 
 settings:
   encodeUrl: true

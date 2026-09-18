@@ -1,18 +1,21 @@
 info:
-  name: Login
+  name: Crear
   type: http
-  seq: 2
+  seq: 1
 
 http:
   method: POST
-  url: "{{baseURL}}/api/auth/login"
+  url: "{{baseURL}}/api/categorias"
   body:
     type: json
     data: |-
       {
-        "username": "test",
-        "password": "Test1234"
+        "nombre": "Juguetes",
+        "descripcion": "Todos los juguetes"
       }
+  auth:
+    type: bearer
+    token: "{{token}}"
 
 settings:
   encodeUrl: true
