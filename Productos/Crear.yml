@@ -14,7 +14,7 @@ http:
         "precioCompra": 6000,
         "precioVenta": 12500,
         "stock": 20,
-        "categoriaId": 1
+        "categoriaId": 2
       }
   auth:
     type: bearer

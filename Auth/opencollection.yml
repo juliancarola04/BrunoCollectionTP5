@@ -18,9 +18,6 @@ request:
   auth:
     type: bearer
     token: ""
-  variables:
-    - name: baseURL
-      value: https://localhost:7128
 bundled: false
 extensions:
   bruno:

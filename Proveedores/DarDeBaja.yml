@@ -8,7 +8,7 @@ http:
   url: "{{baseURL}}/api/proveedores/admin/dardebaja/1"
   auth:
     type: bearer
-    token: ""
+    token: "{{token}}"
 
 settings:
   encodeUrl: true

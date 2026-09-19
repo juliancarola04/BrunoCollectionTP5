@@ -5,14 +5,14 @@ info:
 
 http:
   method: PUT
-  url: "{{baseURL}}/api/clientes"
+  url: "{{baseURL}}/api/clientes/2"
   body:
     type: json
     data: |-
       {
         "nombre": "María Gómez",
-        "dni": "30123456",
-        "telefono": "+54 11 5555-1234",
+        "dni": "30123457",
+        "telefono": "+541155551234",
         "email": "maria@test.com",
         "direccion": "Av. Siempre Viva 742"
       }

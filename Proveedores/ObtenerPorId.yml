@@ -6,7 +6,9 @@ info:
 http:
   method: GET
   url: "{{baseURL}}/api/proveedores/admin/{idProveedor}"
-  auth: inherit
+  auth:
+    type: bearer
+    token: "{{token}}"
 
 settings:
   encodeUrl: true

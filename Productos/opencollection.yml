@@ -13,13 +13,6 @@ config:
         username: ""
         password: ""
       bypassProxy: ""
-
-request:
-  variables:
-    - name: baseURL
-      value: https://localhost:7128
-    - name: token
-      value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJBUElDbGllbnRlIiwiaXNzIjoiQVBJIiwiZXhwIjoxNzg5Njc5MzY2LCJzdWIiOiIxIiwiZW1haWwiOiJ0ZXN0QHRlc3QuY29tIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiVmlzaXRhbnRlIiwiaWF0IjoxNzg5Njc1NzY2LCJuYmYiOjE3ODk2NzU3NjZ9.x01lhGqU9uIowmbX4g8H13XevyGos-AKknfyfd_1J_s
 bundled: false
 extensions:
   bruno:
