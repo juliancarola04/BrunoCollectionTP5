@@ -1,0 +1,25 @@
+info:
+  name: Actualizar
+  type: http
+  seq: 5
+
+http:
+  method: PUT
+  url: "{{baseURL}}/api/categorias/1"
+  body:
+    type: json
+    data: |-
+      {
+        "nombre": "Juguetes",
+        "descripcion": "Algunos de los juguetes"
+      }
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

@@ -1,0 +1,28 @@
+info:
+  name: Crear
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: "{{baseURL}}/api/ventas"
+  body:
+    type: json
+    data: |-
+      {
+        "clienteId": 3,
+        "items": [
+          { "productoId": 1, "cantidad": 3 },
+          { "productoId": 3, "cantidad": 10 }
+        ]
+      }
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

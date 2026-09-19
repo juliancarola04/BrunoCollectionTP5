@@ -1,18 +1,23 @@
 info:
-  name: Login
+  name: CrearVenta
   type: http
-  seq: 2
+  seq: 4
 
 http:
   method: POST
-  url: "{{baseURL}}/api/auth/login"
+  url: "{{baseURL}}/api/ventas"
   body:
     type: json
     data: |-
       {
-        "username": "test",
-        "password": "Test1234"
+        "clienteId": 1,
+        "items": [
+          { "productoId": 1, "cantidad": 2 }
+        ]
       }
+  auth:
+    type: bearer
+    token: "{{token}}"
 
 settings:
   encodeUrl: true
