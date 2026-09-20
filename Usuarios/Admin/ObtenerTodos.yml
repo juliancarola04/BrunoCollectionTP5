@@ -5,10 +5,20 @@ info:
 
 http:
   method: GET
-  url: "{{baseURL}}/api/usuarios"
+  url: "{{baseURL}}/api/usuarios/?eliminado=false&numeropagina=1&tamanopagina=20"
+  params:
+    - name: eliminado
+      value: "false"
+      type: query
+    - name: numeropagina
+      value: "1"
+      type: query
+    - name: tamanopagina
+      value: "20"
+      type: query
   auth:
     type: bearer
-    token: ""
+    token: "{{token}}"
 
 settings:
   encodeUrl: true

@@ -5,7 +5,17 @@ info:
 
 http:
   method: GET
-  url: "{{baseURL}}/api/proveedores/admin"
+  url: "{{baseURL}}/api/proveedores/admin/?buscar=ites&ordenarpor=razonsocial&direccion=desc"
+  params:
+    - name: buscar
+      value: ites
+      type: query
+    - name: ordenarpor
+      value: razonsocial
+      type: query
+    - name: direccion
+      value: desc
+      type: query
   auth:
     type: bearer
     token: "{{token}}"

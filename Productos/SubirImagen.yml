@@ -1,14 +1,17 @@
-info:
-  name: ObtenerPorId
+﻿info:
+  name: SubirImagen
   type: http
-  seq: 5
+  seq: 6
 
 http:
-  method: GET
-  url: "{{baseURL}}/api/productos/2"
+  method: POST
+  url: "{{baseURL}}/api/productos/1/imagen"
   body:
-    type: json
-    data: ""
+    type: multipart-form
+    form:
+      - name: archivo
+        value: ""
+        type: file
   auth:
     type: bearer
     token: "{{token}}"

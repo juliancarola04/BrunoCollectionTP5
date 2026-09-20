@@ -5,16 +5,19 @@ info:
 
 http:
   method: POST
-  url: "{{baseURL}}/api/proveedores/admin/crear"
+  url: "{{baseURL}}/api/ingresos"
   body:
     type: json
     data: |-
       {
-        "razonSocial": "ITES5",
-        "cuit": "1234567893",
-        "direccion": "Direccion",
-        "email": "Email23@gmail.com",
-        "telefono": "Telefono"
+        "proveedorId": 1,
+        "items": [
+          {
+            "productoId": 3,
+            "cantidad": 10,
+            "precioUnitario": 1000
+          }
+        ]
       }
   auth:
     type: bearer

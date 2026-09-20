@@ -1,11 +1,24 @@
-info:
+﻿info:
   name: ObtenerTodos
   type: http
   seq: 1
 
 http:
   method: GET
-  url: "{{baseURL}}/api/clientes"
+  url: "{{baseURL}}/api/clientes?numeropagina=1&tamanopagina=20&ordenarpor=id&direccion=desc"
+  params:
+    - name: numeropagina
+      value: "1"
+      type: query
+    - name: tamanopagina
+      value: "20"
+      type: query
+    - name: ordenarpor
+      value: id
+      type: query
+    - name: direccion
+      value: desc
+      type: query
   auth:
     type: bearer
     token: "{{token}}"
